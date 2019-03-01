@@ -7,6 +7,7 @@ import {VueMasonryPlugin} from 'vue-masonry';
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import config from './firebaseConfig';
 
 Vue.config.productionTip = false
 Vue.use(Vuetify)
@@ -27,14 +28,7 @@ Vue.use(VueRouter)
 
   });
 
- const config = {
-    apiKey: "AIzaSyADE-RxofKm9yF5xssAAzRcHQAs9xcgsuc",
-    authDomain: "hiromart-fbef3.firebaseapp.com",
-    databaseURL: "https://hiromart-fbef3.firebaseio.com",
-    projectId: "hiromart-fbef3",
-    storageBucket: "hiromart-fbef3.appspot.com",
-    messagingSenderId: "538291571142"
-  };
+
 
   firebase.initializeApp(config);
 
